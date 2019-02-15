@@ -43,7 +43,7 @@ def list(songs)
   end
 end
 
- songs 
+ play
 def play(songs)
   puts "Please enter a song name or number:"
   binding.pry
