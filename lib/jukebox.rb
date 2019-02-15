@@ -10,6 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+=begin
 def say_hello(name)
 
   "Hi #{name}!"
@@ -19,3 +20,4 @@ puts "Enter your name:"
 user_name = gets.chomp
 
 puts say_hello(user_name)
+=end
