@@ -69,15 +69,16 @@ def run
   help
   puts "Please enter a command:"
   user_input = gets.chomp
+
   until user_input == "exit"
     puts "Please enter a command:"
     user_input = gets.chomp
     if user_input == "help"
       puts help
     elsif user_input == "list"
-      list
+      list(songs)
     elsif user_input == "play"
-      play
+      play(songs)
     else
       exit_jukebox
       break
