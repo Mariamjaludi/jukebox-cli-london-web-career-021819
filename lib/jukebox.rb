@@ -48,14 +48,16 @@ def play(songs)
   puts "Please enter a song name or number:"
   binding.pry
   user_input = gets.chomp
-
+  check = false
   songs.each_with_index do |val, index|
-    if user_input == val || user_input.to_i - 1 == index 
+    if user_input == val || user_input.to_i - 1 == index
       puts "Playing #{val}"
-    else
-      puts "Invalid input, please try again"
+      check = true
     end
   end
+    if check == false
+      puts "Invalid input, please try again"
+    end
 end
 
 def exit_jukebox
