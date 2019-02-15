@@ -24,7 +24,7 @@ puts say_hello(user_name)
 
 def help
 
-  puts "I accept the following commands:
+"I accept the following commands:
 - help : displays this help message
 - list : displays a list of songs you can play
 - play : lets you choose a song to play
@@ -59,12 +59,14 @@ def exit_jukebox
 end
 
 def run
-  help
+  puts help
   puts "Please enter a command:"
   user_input = gets.chomp
   until user_input == "exit"
     puts "Please enter a command:"
     user_input = gets.chomp
+    if user_input == "help"
+      puts help
   end
 
 end
