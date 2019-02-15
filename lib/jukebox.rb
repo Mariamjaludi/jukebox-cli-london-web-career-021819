@@ -50,7 +50,7 @@ def play(songs)
   user_input = gets.chomp
 
   songs.each_with_index do |val, index|
-    if user_input == val || user_input == index + 1
+    if user_input == val || user_input - 1 == index 
       puts "Playing #{val}"
     else
       puts "Invalid input, please try again"
