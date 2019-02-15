@@ -29,4 +29,14 @@ def help
 - list : displays a list of songs you can play
 - play : lets you choose a song to play
 - exit : exits this program"
+
+end
+
+def list(songs)
+  i = 0
+
+  while i < songs.length
+    puts "#{i + 1}. #{songs[i]}"
+    i += 1
+  end
 end
