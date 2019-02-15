@@ -74,7 +74,7 @@ def run
     puts "Please enter a command:"
     user_input = gets.chomp
     if user_input == "help"
-      puts help
+      help
     elsif user_input == "list"
       list(songs)
     elsif user_input == "play"
